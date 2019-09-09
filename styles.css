@@ -20,6 +20,7 @@ a:link {
 
 #quote {
     font-size: 14px;
+    font-style: oblique;
 }
 
 #wrap {
@@ -37,15 +38,15 @@ ul.nav {
 
 a.nav {
     display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
 }
 
 a.nav:hover {
-    background-color: #0dbf9f;
+    background-color: #111;
 }
 
 nav {
