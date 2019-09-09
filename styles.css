@@ -8,6 +8,16 @@ a:link {
     color: #0dbf9f;
 }
 
+a:visited {
+    text-decoration: none;
+    color: #0dbf9f;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #0a8f77;
+}
+
 .frame {
     padding: 16px 16px 16px 16px;
     background: #fafafa;
@@ -74,3 +84,4 @@ nav {
     color: #fafafa;
     cursor: pointer;
   }
+
