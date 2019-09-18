@@ -38,6 +38,73 @@ a:hover {
     width: 100%;
 }
 
+.active {
+    background-color: #0dbf9f;
+  }
+
+  button {
+    background-color: hsla(0, 0%, 98%, 0);
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 2px solid #0dbf9f;
+  }
+
+  button:hover {
+      background-color: #0dbf9f;
+    color: #fafafa;
+    cursor: pointer;
+  }
+
+/*
+========================================
+Grid
+========================================
+*/
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 960px;
+    width: auto;
+    background-color: hsla(0, 0%, 98%, 0.55);
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    }
+
+/*
+========================================
+Typography
+========================================
+*/
+
+h1, h3, h4, h5, p {
+margin-bottom: 22px;
+margin-left: 12px;
+margin-right: 12px;
+}
+
+/*
+========================================
+Nav Bar Buttons
+========================================
+*/
+
 ul.nav {
     list-style-type: none;
     margin: 0;
@@ -61,28 +128,8 @@ a.nav:hover {
 }
 
 nav {
-    color: #fafafa
+    color: #fafafa0f;
 }
-
-.active {
-    background-color: #0dbf9f;
-  }
-
-  button {
-    background-color: #fafafa;
-    border: none;
-    padding: 12px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 12px;
-    border: 2px solid #0dbf9f;
-  }
-
-  button:hover {
-      background-color: #0dbf9f;
-    color: #fafafa;
-    cursor: pointer;
-  }
-
+.nav-container {
+    border-radius: 16px;
+}
