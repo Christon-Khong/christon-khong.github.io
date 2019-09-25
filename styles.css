@@ -1,7 +1,4 @@
-body {
-    background-color: lightgray;
-    font-family: sans-serif;
-}
+
 
 a:link {
     text-decoration: none;
@@ -55,7 +52,7 @@ a:hover {
   }
 
   button:hover {
-      background-color: #0dbf9f;
+    background-color: #0dbf9f;
     color: #fafafa;
     cursor: pointer;
   }
@@ -78,7 +75,6 @@ Grid
     margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
-    max-width: 960px;
     width: auto;
     background-color: hsla(0, 0%, 98%, 0.55);
     border: none;
@@ -127,9 +123,88 @@ a.nav:hover {
     background-color: #111;
 }
 
-nav {
+.primary-nav {
     color: #fafafa0f;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    text-transform: uppercase;
 }
 .nav-container {
     border-radius: 16px;
+}
+
+/*
+========================================
+     Custom styles
+     ========================================
+   */
+
+ body {
+    background-color: lightgray;
+    color: darkgray;
+    font: 300 16px/22px "Montserrat","Open Sans", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+    background:
+       url("https://cdn.vox-cdn.com/thumbor/BmruaUB4BIUSCTwgsaO_7T9fL6M=/0x0:3500x2000/1200x675/filters:focal(1470x720:2030x1280)/cdn.vox-cdn.com/uploads/chorus_image/image/65088847/New_York_City_Central_Park_from_Above.0.jpg") 0 0 repeat,
+       url("https://img.theculturetrip.com/768x432/wp-content/uploads/2019/01/fda03y.jpg") 0 0 repeat,
+       url("https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_474,q_75,w_640/v1/clients/newyorkstate/5232359e_e163_475c_abe3_0f20af112a8c_ae020bfc-a771-4564-87b7-479fbe55735d.jpg") 0 0 repeat;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 44px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 44px;
+}
+
+h3 {
+    font-size: 21px;
+    color: #0dbf9f;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    color: #0dbf9f;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+strong {
+    font-weight: 400;
+}
+
+cite, em {
+    font-style: italic;
+}
+
+.section {
+    line-height: 44px;
+    padding: 22px 80px 66px 80px;
+    text-align: center;
+}
+
+.row, .row-alt {
+    min-width: 960px;
+    width: auto
+}
+
+.row {
+    background: #fafafa;
+    padding: 0px 0 0px 0;
+}
+
+.row-alt {
+    background: #fafafa;
+    background: -webkit-linear-gradient(to right, #a7e5db, #47ac9b);
+    background:    -moz-linear-gradient(to right, #a7e5db, #47ac9b);
+    background:         linear-gradient(to right, #a7e5db, #47ac9b);
+    padding: 1px 0 1px 0;
 }
