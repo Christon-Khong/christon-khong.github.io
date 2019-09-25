@@ -208,3 +208,7 @@ cite, em {
     background:         linear-gradient(to right, #a7e5db, #47ac9b);
     padding: 1px 0 1px 0;
 }
+
+footer p {
+    color: #4f4f4f
+}
