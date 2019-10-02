@@ -251,3 +251,22 @@ footer p {
 .coolVids .cooltunes .placeImages{
     height: auto;
 }
+
+.familyMember img{
+    max-height: 240px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.familyMember p{
+    max-width: 180px;
+}
+
+.familyMember {
+    float: left;
+}
+
+.family {
+    overflow: hidden;
+}
