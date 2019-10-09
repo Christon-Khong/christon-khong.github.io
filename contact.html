@@ -29,17 +29,68 @@
                             Contact Me
                         </h3>
                     </header>
-                    <p class="contact-form">
-                        Name: <input type="text" name="submitterName"><br>
-                        Email: <input type="text" name="email"><br>
-                        <textarea rows="4" cols="50" placeholder="Enter message here..."></textarea><br>
-                        <input type="checkbox" name="messageBack" value="Reply">Would you like to be contacted?<br>
-                        <!--
-                        <address>
-                            <a href="mailto:ckhong1@bruinmail.slcc.edu">ckhong1@bruinmail.slcc.edu</a>
-                        </address> 
-                        --> 
-                    </p>
+                    <section class="col-2-3">
+                            <h4>Why you should contact me</h4> 
+                            <h5>Use this form to message me</h5> 
+                            
+                             <p>You know, I am a very interesting person, and I have given you a chance to message me and let me know you. I love to get messages from new people and I am looking forward to one from you!</p> 
+                            
+                            <h4>Why send a message?</h4> 
+                            
+                            <ul class="why-contact"> 
+                                <li>I am a cool guy who likes to golf</li> 
+                                <li>I can cook an awesome steak & burger, you like food right? </li> 
+                                <li>I love games, and who does not love to play games? </li> 
+                                <li>I am simply amazing</li> 
+                            </ul> 
+
+                        <!--<p class="contact-form">
+                            Name: <input type="text" name="submitterName"><br>
+                            Email: <input type="text" name="email"><br>
+                            <textarea rows="4" cols="50" placeholder="Enter message here..."></textarea><br>
+                            <input type="checkbox" name="messageBack" value="Reply">Would you like to be contacted?<br>
+                            
+                            <address>
+                                <a href="mailto:ckhong1@bruinmail.slcc.edu">ckhong1@bruinmail.slcc.edu</a>
+                            </address> 
+                            
+                        </p>--> 
+                    </section>
+                    <form class="col-1-3" action="mailto:ckhong1@bruinmail.slcc.edu" method="post">
+                            <fieldset class="form-group"> 
+ 
+                                    <label> 
+                                    Name 
+                                    <input type="text" name="name" placeholder="Full name" required> 
+                                    </label> 
+                                    
+                                    <label> 
+                                    Email 
+                                    <input type="email" name="email" placeholder="Email address" required> 
+                                    </label> 
+                                    
+                                    <label> 
+                                     Rate my site: 
+                                    <select name="rating" required> 
+                                    <option value="1" selected>1</option> 
+                                    <option value="2">2</option> 
+                                    <option value="3">3</option> 
+                                    <option value="4">4</option> 
+                                    <option value="5">5</option> 
+                                    </select> 
+                                    </label> 
+                                    
+                                    <label> 
+                                    Comments 
+                                    <textarea name="comments" ></textarea> 
+                                    </label> 
+                                    
+                                    <input class="btn" type="submit" name="submit" value="Send"> 
+                                    </fieldset> 
+                                    
+                                    
+                    </form>
+                    
                 </div>
             </section>
             <footer class="row-alt">
