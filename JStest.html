@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript DOM Example</title>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div style='display: inline-block'>
+
+            <p>A script on this page should rotate through images of the Phases of the Moon:</p>
+            
+            <img src="" id="rotatingImage" height="600" width="600">
+            
+            </div><div style='display: inline-block; vertical-align:top;'>
+            
+            <h1>Things to do at Halloween</h1>
+            
+            <input type="text" id="newitem">
+            
+            <button id="addElement" onclick="addList()">Add to the list</button>
+            
+            <ol id='MyList'>
+            
+            </ol>
+            
+        </div>
+            
+        <script>
+            //Adds a list of li elements each time the user inputs text and clicks button
+            function addList(){
+                var userText = document.querySelector('#newitem').value;
+                var newItem = document.createElement('li')
+
+                newItem.textContent = userText  
+
+                var theList = document.querySelector('#MyList')
+
+                theList.appendChild(newItem)
+            }
+
+            MoonArray = ["moonImages/Moon10.jpg", "moonImages/Moon11.jpg", "moonImages/Moon12.jpg", "moonImages/Moon13.jpg", "moonImages/Moon14.jpg", "moonImages/Moon15.jpg", "moonImages/Moon16.jpg", "moonImages/Moon17.jpg", "moonImages/Moon18.jpg", "moonImages/Moon19.jpg", "moonImages/Moon20.jpg", "moonImages/Moon21.jpg", "moonImages/Moon22.jpg", "moonImages/Moon23.jpg", "moonImages/Moon24.jpg", "moonImages/Moon25.jpg", "moonImages/Moon26.jpg", "moonImages/Moon27.jpg", "moonImages/Moon28.jpg", "moonImages/Moon29.jpg", "moonImages/Moon30.jpg", "moonImages/Moon31.jpg", "moonImages/Moon32.jpg", "moonImages/Moon33.jpg", "moonImages/Moon34.jpg"];
+            phase = 0;
+            //Rotate moon image
+            function myImage() {
+                var d = MoonArray[phase];
+                console.log(d)
+                var image = document.querySelector("#rotatingImage");
+                image.setAttribute('src', d);
+
+                if (phase < MoonArray.length - 1) {
+
+                    phase++
+
+                } else {
+
+                    phase = 0;
+
+                }
+                
+            }
+            var myVar = setInterval(myImage, 1000);
+
+        </script>
+    </body>
+</html>
