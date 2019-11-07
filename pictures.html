@@ -32,11 +32,11 @@
                                 <option value="RL">Real Life</option>
                         </select>
                         <div class="thumbnails" id="thumbs">
-                                <img onmouseover="ShowPreview(this.src)" id="img1" src="images/LOTR/img1.jpg" alt="">
-                                <img onmouseover="ShowPreview(this.src)" id="img2" src="images/LOTR/img2.jpg" alt="">
-                                <img onmouseover="ShowPreview(this.src)" id="img3" src="images/LOTR/img3.jpg" alt="">
-                                <img onmouseover="ShowPreview(this.src)" id="img4" src="images/LOTR/img4.jpg" alt="">
-                                <img onmouseover="ShowPreview(this.src)" id="img5" src="images/LOTR/img5.jpg" alt="">
+                                <img onmouseover="ShowPreview(this.src)" id="img1" src="Images/LOTR/img1.jpg" alt="">
+                                <img onmouseover="ShowPreview(this.src)" id="img2" src="Images/LOTR/img2.jpg" alt="">
+                                <img onmouseover="ShowPreview(this.src)" id="img3" src="Images/LOTR/img3.jpg" alt="">
+                                <img onmouseover="ShowPreview(this.src)" id="img4" src="Images/LOTR/img4.jpg" alt="">
+                                <img onmouseover="ShowPreview(this.src)" id="img5" src="Images/LOTR/img5.jpg" alt="">
                         </div>
                     </div>
                     <div class="preview" align="center">
@@ -101,7 +101,7 @@
                 function changeGallery(filefolder){
                     var gallery = document.querySelector("#thumbs").children;
                     for(i= 0;i<gallery.length;i++){
-                        gallery[i].setAttribute('src', "images/"+filefolder+"/img"+(i+1)+".jpg");
+                        gallery[i].setAttribute('src', "Images/"+filefolder+"/img"+(i+1)+".jpg");
                         //console.log(gall[i].getAttribute('src'));
                     }
                     //console.log(filefolder);
