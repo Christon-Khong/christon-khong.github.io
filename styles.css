@@ -39,7 +39,7 @@ a:hover {
     background-color: #0dbf9f;
   }
 
-button, .btn {
+.contact-button, .btn {
     background-color: hsla(0, 0%, 98%, 0);
     padding: 12px 24px;
     text-align: center;
@@ -53,7 +53,7 @@ button, .btn {
     max-width: 150px;
   }
 
-button:hover, .btn:hover {
+.contact-button:hover, .btn:hover {
     background-color: #0dbf9f;
     color: #fafafa;
     cursor: pointer;
@@ -123,11 +123,11 @@ a.nav {
 }
 
 a.nav:hover {
-    background-color: #111;
+    background-color: transparent;
 }
 
-.primary-nav {
-    color: #fafafa0f;
+nav {
+    color: transparent;
     font-size: 14px;
     font-weight: 800;
     letter-spacing: .5px;
@@ -136,6 +136,17 @@ a.nav:hover {
 .nav-container {
     border-radius: 16px;
 }
+
+.icon-bar {
+    background-color: #888;
+    margin: 3px 0; 
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    
+}
+
 
 /*
 ========================================

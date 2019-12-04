@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-            <link href="styles.css" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <link href="styles.css" rel="stylesheet">
         <title>Christon Khong Pictures</title>
     </head>
     <body>
@@ -14,17 +12,27 @@
                         <h1 ><a href="index.html">Christon Khong</a></h1>
                         <h2>CSIS 1430-402</h2>
                     </div>
-                    
-                    <nav class="primary-nav">
-                        <ul class="nav">
-                            <li><a class="nav" href="index.html">Me Page</a></li>
-                            <li><a class="nav" href="family.html">My Family</a></li>
-                            <li><a class="nav" href="hobbies.html">My Hobbies</a></li>
-                            <li><a class="nav active" href="pictures.html">My Picture Gallery</a></li>
-                            <li><a class="nav" href="contact.html">Contact Me</a></li>
-                        </ul>
-                    </nav>
                 </header> 
+                <nav class="row navbar navbar-expand-sm bg-dark" role="navigation">
+                        <div class = "navbar-header">
+                                <button type = "button" class = "navbar-toggler float-right" 
+                                    data-toggle = "collapse" data-target = "#navbar" aria-expanded="true" aria-controls="navbar">
+                                    <span class = "sr-only">Toggle navigation</span>
+                                    <span class = "icon-bar"></span>
+                                    <span class = "icon-bar"></span>
+                                    <span class = "icon-bar"></span>
+                                </button>
+                        </div>
+                        <div id = "navbar" class = "navbar-collapse collapse" >
+                            <ul class="nav navbar-nav">
+                                <li><a class="nav" href="index.html">Me Page</a></li>
+                                <li><a class="nav" href="family.html">My Family</a></li>
+                                <li><a class="nav" href="hobbies.html">My Hobbies</a></li>
+                                <li><a class="nav active" href="pictures.html">My Picture Gallery</a></li>
+                                <li><a class="nav" href="contact.html">Contact Me</a></li>
+                            </ul>
+                        </div>  
+                    </nav>
             <section class="row-alt">
                 <div class="container sectioncenter">
                     <div class="thumbnail-select">
@@ -82,18 +90,13 @@
             </section>
             <footer class="row-alt">
                     <nav class="primary-nav">
-                            <ul class="nav">
-                                <li><a class="nav" href="index.html">Me Page</a></li>
-                                <li><a class="nav" href="family.html">My Family</a></li>
-                                <li><a class="nav" href="hobbies.html">My Hobbies</a></li>
-                                <li><a class="nav active" href="pictures.html">My Picture Gallery</a></li>
-                                <li><a class="nav" href="contact.html">Contact Me</a></li>
-                            </ul>
-                        </nav>
-                    <p>
+                    <div class="row">
                         &copy Copyright Christon Khong
-                    </p>
+                    </div>
             </footer>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
             <script>
                 
                 function ShowPreview(newImage) {
